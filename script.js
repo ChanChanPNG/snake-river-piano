@@ -1,6 +1,5 @@
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('#primaryNav');
-menuButton?.addEventListener('click', () => {const open = nav.classList.toggle('open'); menuButton.setAttribute('aria-expanded', String(open));menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');});
+const menuButton=document.querySelector('.menu-toggle');
+const nav=document.querySelector('#primaryNav');
+menuButton?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');});
 nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');}));
-document.querySelector('#year').textContent = new Date().getFullYear();
-document.querySelector('#inquiry-form')?.addEventListener('submit', e => {e.preventDefault(); const values = new FormData(e.currentTarget); const name = String(values.get('name')||'').trim(); const email=String(values.get('email')||'').trim(); if(!name||!email||!e.currentTarget.reportValidity())return; const lines=[`Name: ${name}`,`Email: ${email}`,`Phone: ${values.get('phone')||'Not provided'}`,`Program: ${values.get('program')||'Not sure yet'}`,`Message: ${values.get('message')||'None'}`]; const subject='Piano lesson inquiry from '+name;const mailto=`mailto:snakeriverpiano@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;window.location.href=mailto;document.querySelector('#form-status').textContent='Your email application should open with the inquiry ready to send.';});
+const year=document.querySelector('#year');if(year)year.textContent=new Date().getFullYear();
