@@ -19,6 +19,6 @@ The Snake River Piano and Wayfinder Creative logos are packaged in `assets/`. Th
 
 ## Content
 
-Piano Lab costs $65/month and is for ages 4–18. After-school options serve families in the Blackfoot and Snake River School Districts; morning classes are offered for homeschool families. The exact timetable is intentionally not published pending confirmation.
+Piano Lab costs $65/month and is for ages 6–18. After-school options serve families in the Blackfoot and Snake River School Districts; morning classes are offered for homeschool families. The exact timetable is intentionally not published pending confirmation.
 
 The footer credits Wayfinder Creative and links to https://wayfindercreative.net/.
